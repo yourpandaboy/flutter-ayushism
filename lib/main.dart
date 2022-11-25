@@ -32,7 +32,9 @@ class MyApp extends StatelessWidget {
             ),
       ),
       home: const MembersScreen(),
-      routes: {'/member-info': (context) => const MemberInfoScreen()},
+      routes: {
+        MemberInfoScreen.routeName: (context) => const MemberInfoScreen()
+      },
     );
   }
 }

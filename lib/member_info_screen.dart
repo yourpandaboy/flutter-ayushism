@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 class MemberInfoScreen extends StatelessWidget {
   const MemberInfoScreen({Key? key}) : super(key: key);
 
+  static const routeName = '/member-info';
+
   // final String memberName;
   // final String memberCountry;
 
@@ -21,9 +23,9 @@ class MemberInfoScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(memberName!),
       ),
-      body: const Center(
-        child: Text('The Information of a member'),
-      ),
+      // body: ListView.builder(itemBuilder: (context, index) {
+
+      // }, itemCount: ,),
     );
   }
 }

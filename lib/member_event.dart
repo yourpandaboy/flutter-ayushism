@@ -13,7 +13,7 @@ class MemberEvent extends StatelessWidget {
   const MemberEvent(this.name, this.color, this.country);
 
   void selectCategory(BuildContext ctx) {
-    Navigator.of(ctx).pushNamed('/member-info', arguments: {
+    Navigator.of(ctx).pushNamed(MemberInfoScreen.routeName, arguments: {
       'name': name,
       'country': country,
     });
